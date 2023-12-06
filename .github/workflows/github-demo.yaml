@@ -15,5 +15,5 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run Lint
-        run: next lint
+        run: npm run lint
       - run: echo "🍏 This job's status is ${{ job.status }}."
