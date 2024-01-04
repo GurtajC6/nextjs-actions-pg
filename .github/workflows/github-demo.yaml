@@ -7,8 +7,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
+      - name: Navigate to folder
+        run: cd frontend
       - name: Install dependencies
-        run: npm install
+        run: yarn --frozen-lockfile
       - name: Run Lint
-        run: npm run lint
+        run: yarn run lint
       - run: echo "🍏 This job's status is ${{ job.status }}."
