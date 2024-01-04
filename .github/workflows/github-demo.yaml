@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Navigate to folder
         run: |
-          cd .github
+          cd frontend
           ls -la
           yarn --frozen-lockfile
       - name: debug
