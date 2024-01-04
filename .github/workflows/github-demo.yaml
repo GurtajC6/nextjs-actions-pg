@@ -7,13 +7,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: debug
-        run: |
-          ls -la
       - name: Navigate to folder
         run: |
           cd .github
           ls -la
+          yarn --frozen-lockfile
       - name: debug
         run: |
           ls -la
