@@ -8,9 +8,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Navigate to folder
-        run: 'ls'
+        run: cd /frontend
+      - name: what is here?
+        run: ls
       - name: Install dependencies
-        run: 'yarn --frozen-lockfile'
+        run: yarn --frozen-lockfile
       - name: Run Lint
-        run: 'yarn run lint'
+        run: yarn run lint
       - run: echo "🍏 This job's status is ${{ job.status }}."
