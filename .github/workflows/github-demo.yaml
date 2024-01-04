@@ -16,7 +16,6 @@ jobs:
           cd frontend
       - name: debug
         run: |
-          pwd 
           ls -la
       # - name: Install dependencies
       #   run: |
