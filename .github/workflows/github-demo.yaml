@@ -13,7 +13,7 @@ jobs:
           ls -la
       - name: Navigate to folder
         run: |
-          cd frontend
+          cd .github
       - name: debug
         run: |
           ls -la
