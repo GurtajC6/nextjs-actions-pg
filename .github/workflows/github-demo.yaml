@@ -10,9 +10,12 @@ jobs:
       - name: Navigate to folder
         run: cd frontend
       - name: what is here?
-        run: ls
+        run: |
+          ls
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: |
+          yarn --frozen-lockfile
       - name: Run Lint
-        run: yarn run lint
+        run: |
+          yarn run lint
       - run: echo "🍏 This job's status is ${{ job.status }}."
