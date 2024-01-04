@@ -8,7 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Navigate to folder
-        run: cd /frontend
+        run: cd frontend
       - name: what is here?
         run: ls
       - name: Install dependencies
